@@ -7,16 +7,17 @@ const assertEqual = function(actual, expected) {
 };
 
 const countLetters = function(str) {
+  const lowerCaseStr = str.toLowerCase();
   let numLetters = {};
-  for (let i = 0; i < str.length; i++) {
-    if (numLetters[str[i]]) {
-      numLetters[str[i]]++;
+  for (let i = 0; i < lowerCaseStr.length; i++) {
+    if (numLetters[lowerCaseStr[i]]) {
+      numLetters[lowerCaseStr[i]]++;
     } else {
-      numLetters[str[i]] = 1;
+      numLetters[lowerCaseStr[i]] = 1;
     }
   }
   delete numLetters[" "];
   return numLetters;
 }
 
-console.log(countLetters("lighthouse in the house"));
+console.log(countLetters("lighthouse in the House"));
