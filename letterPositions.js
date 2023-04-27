@@ -19,11 +19,15 @@ const eqArrays = function(arr1, arr2) {
 };
 
 const letterPositions = function(sentence) {
-  const results = {};
+  let results = {};
   for (i = 0; i < sentence.length; i++) {
-    console.log(sentence[i]);
+    if (results[sentence[i]]) {
+      results[sentence[i]] = i;
+    } else {
+      results[sentence[i]] = i;
+    }
   }
   return results;
 };
 
-letterPositions("hello");
+console.log(letterPositions("hello"));
