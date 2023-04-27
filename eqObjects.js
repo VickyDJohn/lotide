@@ -10,8 +10,14 @@ const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   }
-  for (let keyValue1 in object1) {
-
+  let newObj1 = Object.keys(object1);
+  let newObj2 = Object.keys(object2);
+  for (let keyValue of newObj1) {
+    if (newObj1[keyValue] === newObj2[keyValue]) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 
