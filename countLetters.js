@@ -9,8 +9,13 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(str) {
   let numLetters = {};
   for (let i = 0; i < str.length; i++) {
-    console.log(str[i]);
+    if (numLetters[str[i]]) {
+      numLetters[str[i]]++;
+    } else {
+      numLetters[str[i]] = 1;
+    }
   }
+  return numLetters;
 }
 
 console.log(countLetters("lighthouse in the house"));
