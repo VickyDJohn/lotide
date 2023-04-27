@@ -15,6 +15,7 @@ const countLetters = function(str) {
       numLetters[str[i]] = 1;
     }
   }
+  delete numLetters[" "];
   return numLetters;
 }
 
