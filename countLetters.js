@@ -19,5 +19,18 @@ const countLetters = function(str) {
   delete numLetters[" "];
   return numLetters;
 }
+for (let ch of str) {
+  if (ch !== " ") {
+    if (numLetters[ch]) {
+      numLetters[ch] += 1
+    } else {
+      numLetters[ch] = 1
+    }
+  }
+}
 
-console.log(countLetters("lighthouse in the House"));
+const test1 = countLetters("Lighthouse Labs");
+assertEqual(test1["l"], 2)
+
+// const test2 = countLetters("ObjeCts aRe ExtRemElY hARd To undeRStAnD");
+// assertEqual(test2["o"], 0);

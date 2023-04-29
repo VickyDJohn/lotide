@@ -50,9 +50,9 @@ const eqObjects = function(object1, object2) {
 // const longSleeveMultiColorShirtObject= { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
 // console.log(assertEqual(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject), false));
 
-// const obj1 = {a: 1, b: 2};
-// const obj2 = {b: 2, a: 1};
-// const obj3 = {a: 1, b: 3};
+const obj1 = {a: 1, b: 2};
+const obj2 = {b: 2, a: 1};
+const obj3 = {a: 1, b: 3};
 
-// console.log(eqObjects(obj1, obj2));
-// console.log(eqObjects(obj1, obj3));
+console.log(eqObjects(obj1, obj2));
+console.log(eqObjects(obj1, obj3));
