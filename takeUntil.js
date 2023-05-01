@@ -10,7 +10,7 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
     console.log(`✔️  Assertion Passed: [${arr1}]  ===  [${arr2}]`);
   } else {
@@ -30,4 +30,4 @@ const takeUntil = function(array, callback) {
     return "There is no such value/text in the given array";
   }
   return result;
-}
+};
