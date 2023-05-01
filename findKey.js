@@ -9,18 +9,28 @@ const assertEqual = function(actual, expected) {
 const findKey = function(object, callback) {
   let result = "";
   for (let val in object) {
-    if(callback(object[val])) {
-      return val;
+    if (callback(object[val])) {
+      result = val;
     }
   }
   return result;
 };
 
-console.log(findKey({
-    "Blue Hill": { stars: 1 },
-    "Akaleri": { stars: 3 },
-    "noma": { stars: 2 },
-    "elBulli": { stars: 3 },
-    "Ora": { stars: 2 },
-    "Akelarre": { stars: 3 }
-  }, x => x.stars === 2));
+const result1 = findKey({a: 1, b: 2, c: 3}, x => x % 2 === 0);
+assertEqual(result1, "b"); 
+
+// Test Case 2
+const result2 = findKey({name: "John", age: 30, city: "New York"}, x => x === "New York");
+assertEqual(result2, "city");
+
+// Test Case 3
+const result3 = findKey({a: "apple", b: "banana", c: "cherry"}, x => x === "orange");
+assertEqual(result3, "");
+
+// Test Case 4
+const result4 = findKey({a: 1, b: 3, c: 5}, x => x % 2 === 0);
+assertEqual(result4, "");
+
+// Test Case 5
+const result5 = findKey({x: 1, y: 2, z: 3}, x => x > 2);
+assertEqual(result5, "z");
