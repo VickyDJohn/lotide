@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@vickydj/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide is a JavaScript library offering utility functions for arrays, strings, and objects, facilitating common programming tasks and promoting code reusability.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/VickyDJohn/lotide.git"
   },
-  "author": "",
+  "author": {
+    "name": "vickydj",
+    "email": "vicky.d.john@gmail.com",
+    "url": "https://github.com/VickyDJohn"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/VickyDJohn/lotide/issues"
