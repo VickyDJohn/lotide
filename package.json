@@ -1,6 +1,6 @@
 {
   "name": "@vickydj/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lotide is a JavaScript library offering utility functions for arrays, strings, and objects, facilitating common programming tasks and promoting code reusability.",
   "main": "assertArraysEqual.js",
   "directories": {
